@@ -95,7 +95,8 @@ console.log("There are " + canons + " Canon brand cameras.");
 var canonEbay = 0;
 
 for (i = 0; i < items.length; i += 1) {
-	if ((items[i]['product']['brand'] === 'Canon') && (items[i]['product']['author']['name'] === 'eBay')) {
+
+	if ((items[i]['product']['brand'] === 'Canon') && (items[i]['product']['author']['name'].split(" ")[0] === 'eBay')) {
 		canonEbay += 1;
 	}
 }
@@ -106,8 +107,8 @@ console.log("There are " + canonEbay + " Canon brand cameras on eBay.");
 
 
 
-// Question 6 : Print all the products with their brand, price, and a image link
 
+// Question 6 : Print all the products with their brand, price, and a image link
 
 for (i = 0; i < items.length; i += 1) {
 	var itemBrand = items[i]['product']['brand'];
