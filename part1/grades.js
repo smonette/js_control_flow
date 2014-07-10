@@ -9,11 +9,11 @@
 function grading(scorePercent){
 	if (scorePercent >= 90){
 		console.log(scorePercent + "% is an A! Good job!")
-	} else if ((scorePercent >= 80) && (scorePercent <= 89)){
+	} else if (scorePercent >= 80){
 		console.log(scorePercent + "% is a B!")
-	} else if ((scorePercent >= 70) && (scorePercent <= 79)) {
+	} else if (scorePercent >= 70) {
 		console.log(scorePercent + "% is a C!")
-	} else if ((scorePercent >= 60) && (scorePercent <= 69)) {
+	} else if (scorePercent >= 60) {
 		console.log(scorePercent + "% is a D!")
 	} else if (scorePercent <= 59){
 		console.log(scorePercent + "% is an F...")

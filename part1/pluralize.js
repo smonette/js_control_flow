@@ -20,3 +20,21 @@ function pluralize(word, num){
 pluralize("dog", 1);
 pluralize("cat", 5);
 pluralize("house", 0);
+
+
+
+
+
+
+
+// In class solution
+
+var count = "5",
+	thing = "cat",
+	pluralChar = "";
+
+if ( parseInt(count) > 1) {
+	pluralChar = "s";
+}
+
+console.log("You have " + count, thing + pluralChar);
